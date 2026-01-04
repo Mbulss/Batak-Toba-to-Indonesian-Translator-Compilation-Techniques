@@ -1,0 +1,327 @@
+================================================================================
+BATAK TOBA -> INDONESIAN TRANSLATOR - TEST SUITE
+================================================================================
+Total Test Cases: 50 sentences
+Mode: Unified (Always translates + Shows warnings)
+Dictionary: 1,863+ Batak Toba words
+================================================================================
+
+================================================================================
+Simple Sentences (15 tests)
+================================================================================
+
+Test 1: "Au mangan"
+--------------------------------------------------------------------------------
+Translation: Saya makan.
+[OK] No warnings
+
+Test 2: "Ho manangi"
+--------------------------------------------------------------------------------
+Translation: Kamu pergi.
+[OK] No warnings
+
+Test 3: "Ia marniat"
+--------------------------------------------------------------------------------
+Translation: Dia bernyanyi.
+[OK] No warnings
+
+Test 4: "Au mangan tu pasar"
+--------------------------------------------------------------------------------
+Translation: Saya makan ke pasar.
+[OK] No warnings
+
+Test 5: "Ho mangan buku"
+--------------------------------------------------------------------------------
+Translation: Kamu makan buku.
+[OK] No warnings
+
+Test 6: "Ia marniat di rohang"
+--------------------------------------------------------------------------------
+Translation: Dia bernyanyi di rumah.
+[OK] No warnings
+
+Test 7: "Hita mangan"
+--------------------------------------------------------------------------------
+Translation: Kita makan.
+[OK] No warnings
+
+Test 8: "Hamu manangi"
+--------------------------------------------------------------------------------
+Translation: Kalian pergi.
+[OK] No warnings
+
+Test 9: "Au manangih"
+--------------------------------------------------------------------------------
+Translation: Saya menangis.
+[OK] No warnings
+
+Test 10: "Ho marhobas"
+--------------------------------------------------------------------------------
+Translation: Kamu membaca.
+[OK] No warnings
+
+Test 11: "Dongan manangi"
+--------------------------------------------------------------------------------
+Translation: Teman pergi.
+[OK] No warnings
+
+Test 12: "Au manangihon buku"
+--------------------------------------------------------------------------------
+Translation: Saya memberi buku.
+[OK] No warnings
+
+Test 13: "Ho marhobas buku"
+--------------------------------------------------------------------------------
+Translation: Kamu membaca buku.
+[OK] No warnings
+
+Test 14: "Ia mangan di pasar"
+--------------------------------------------------------------------------------
+Translation: Dia makan di pasar.
+[OK] No warnings
+
+Test 15: "Hita marniat tu rohang"
+--------------------------------------------------------------------------------
+Translation: Kita bernyanyi ke rumah.
+[OK] No warnings
+
+================================================================================
+Complex Sentences (10 tests)
+================================================================================
+
+Test 1: "Au manangihon buku tu dongan"
+--------------------------------------------------------------------------------
+Translation: Saya memberi buku ke teman.
+[OK] No warnings
+
+Test 2: "Ho marhobas buku di rohang"
+--------------------------------------------------------------------------------
+Translation: Kamu membaca buku di rumah.
+[OK] No warnings
+
+Test 3: "Ia mangan buku di pasar"
+--------------------------------------------------------------------------------
+Translation: Dia makan buku di pasar.
+[OK] No warnings
+
+Test 4: "Hita mangan tu pasar"
+--------------------------------------------------------------------------------
+Translation: Kita makan ke pasar.
+[OK] No warnings
+
+Test 5: "Au manangihon dongan buku"
+--------------------------------------------------------------------------------
+Translation: Saya memberi teman buku.
+[OK] No warnings
+
+Test 6: "Dongan marhobas buku di rohang"
+--------------------------------------------------------------------------------
+Translation: Teman membaca buku di rumah.
+[OK] No warnings
+
+Test 7: "Au mangan di pasar"
+--------------------------------------------------------------------------------
+Translation: Saya makan di pasar.
+[OK] No warnings
+
+Test 8: "Ia manangihon hita buku"
+--------------------------------------------------------------------------------
+Translation: Dia memberi kita.
+[OK] No warnings
+
+Test 9: "Ho mangan buku di pasar"
+--------------------------------------------------------------------------------
+Translation: Kamu makan buku di pasar.
+[OK] No warnings
+
+Test 10: "Hita marniat di pasar"
+--------------------------------------------------------------------------------
+Translation: Kita bernyanyi di pasar.
+[OK] No warnings
+
+================================================================================
+Interjections (5 tests)
+================================================================================
+
+Test 1: "Horas"
+--------------------------------------------------------------------------------
+Translation: Halo.
+[!] Warnings: PARSE_ERROR, MISSING_SUBJECT, MISSING_VERB
+
+Test 2: "Horas di hamu"
+--------------------------------------------------------------------------------
+Translation: Halo di kalian.
+[!] Warnings: PARSE_ERROR, MISSING_SUBJECT, MISSING_VERB
+
+Test 3: "Horas tu dongan"
+--------------------------------------------------------------------------------
+Translation: Halo ke teman.
+[!] Warnings: PARSE_ERROR, MISSING_SUBJECT, MISSING_VERB, TU_WITHOUT_VERB
+
+Test 4: "Horas di pasar"
+--------------------------------------------------------------------------------
+Translation: Halo di pasar.
+[!] Warnings: PARSE_ERROR, MISSING_SUBJECT, MISSING_VERB
+
+Test 5: "Horas tu hita"
+--------------------------------------------------------------------------------
+Translation: Halo ke kita.
+[!] Warnings: PARSE_ERROR, MISSING_SUBJECT, MISSING_VERB, TU_WITHOUT_VERB
+
+================================================================================
+Multi-Word Phrases (8 tests)
+================================================================================
+
+Test 1: "Au mangulahon ulaon"
+--------------------------------------------------------------------------------
+Translation: Saya bekerja.
+[OK] No warnings
+
+Test 2: "Ho mambahen salah"
+--------------------------------------------------------------------------------
+Translation: Kamu berbuat salah.
+[OK] No warnings
+
+Test 3: "Ia mangulahon salah"
+--------------------------------------------------------------------------------
+Translation: Dia bersalah.
+[OK] No warnings
+
+Test 4: "Hita marsak roha"
+--------------------------------------------------------------------------------
+Translation: Kita sedih.
+[OK] No warnings
+
+Test 5: "Au mambahen roha"
+--------------------------------------------------------------------------------
+Translation: Saya menyenangkan.
+[OK] No warnings
+
+Test 6: "Ho mangido maaf"
+--------------------------------------------------------------------------------
+Translation: Kamu minta maaf.
+[OK] No warnings
+
+Test 7: "Dongan mangido tu au"
+--------------------------------------------------------------------------------
+Translation: Teman meminta saya.
+[OK] No warnings
+
+Test 8: "Au mangulahon dosa"
+--------------------------------------------------------------------------------
+Translation: Saya berdosa.
+[OK] No warnings
+
+================================================================================
+Grammar Errors (7 tests)
+================================================================================
+
+Test 1: "Tu pasar au manangi"
+--------------------------------------------------------------------------------
+Translation: Ke pasar saya pergi.
+[!] Warnings: PARSE_ERROR, MISSING_SUBJECT, MISSING_VERB, TU_MISPLACED
+
+Test 2: "Do"
+--------------------------------------------------------------------------------
+Translation: Adalah.
+[!] Warnings: PARSE_ERROR, MISSING_SUBJECT, MISSING_VERB, DO_NO_NP
+
+Test 3: "Manangi manangi pasar"
+--------------------------------------------------------------------------------
+Translation: Pergi pergi pasar.
+[!] Warnings: MISSING_SUBJECT, DOUBLE_VERB
+
+Test 4: "Au do pasar"
+--------------------------------------------------------------------------------
+Translation: Saya adalah pasar.
+[!] Warnings: PARSE_ERROR, MISSING_SUBJECT, MISSING_VERB
+
+Test 5: "Manangi"
+--------------------------------------------------------------------------------
+Translation: Pergi.
+[!] Warnings: MISSING_SUBJECT
+
+Test 6: "Au tu"
+--------------------------------------------------------------------------------
+Translation: Saya ke.
+[!] Warnings: PARSE_ERROR, MISSING_SUBJECT, MISSING_VERB, TU_WITHOUT_VERB
+
+Test 7: "Pasar manangi au"
+--------------------------------------------------------------------------------
+Translation: Pasar pergi saya.
+[OK] No warnings
+
+================================================================================
+Unknown Words (5 tests)
+================================================================================
+
+Test 1: "Au xyz pasar"
+--------------------------------------------------------------------------------
+Translation: Saya [xyz] pasar.
+[!] Warnings: PARSE_ERROR, UNKNOWN_WORDS, MISSING_SUBJECT, MISSING_VERB
+
+Test 2: "Ho manangi qwerty"
+--------------------------------------------------------------------------------
+Translation: Kamu pergi [qwerty].
+[!] Warnings: UNKNOWN_WORDS
+
+Test 3: "Dongan asdfgh buku"
+--------------------------------------------------------------------------------
+Translation: Teman [asdfgh] buku.
+[!] Warnings: PARSE_ERROR, UNKNOWN_WORDS, MISSING_SUBJECT, MISSING_VERB
+
+Test 4: "Au mangan zxcvbn"
+--------------------------------------------------------------------------------
+Translation: Saya makan [zxcvbn].
+[!] Warnings: UNKNOWN_WORDS
+
+Test 5: "Ia unknown tu pasar"
+--------------------------------------------------------------------------------
+Translation: Dia [unknown] ke pasar.
+[!] Warnings: PARSE_ERROR, UNKNOWN_WORDS, MISSING_SUBJECT, MISSING_VERB, TU_WITHOUT_VERB
+
+================================================================================
+FINAL RESULTS SUMMARY
+================================================================================
+
+Simple Sentences (15 tests):
+  Total: 15
+  Clean: 15 (100.0%)
+  With warnings: 0
+
+Complex Sentences (10 tests):
+  Total: 10
+  Clean: 10 (100.0%)
+  With warnings: 0
+
+Interjections (5 tests):
+  Total: 5
+  Clean: 0 (0.0%)
+  With warnings: 5
+
+Multi-Word Phrases (8 tests):
+  Total: 8
+  Clean: 8 (100.0%)
+  With warnings: 0
+
+Grammar Errors (7 tests):
+  Total: 7
+  Clean: 1 (14.3%)
+  With warnings: 6
+
+Unknown Words (5 tests):
+  Total: 5
+  Clean: 0 (0.0%)
+  With warnings: 5
+
+================================================================================
+OVERALL STATISTICS
+================================================================================
+Total sentences tested: 50
+All translations successful: 50 (100%)
+Clean translations (no warnings): 34 (68.0%)
+Translations with warnings: 16 (32.0%)
+================================================================================
+
+[NOTE] All sentences were successfully translated.
+   Warnings indicate potential grammar issues but don't block translation.
